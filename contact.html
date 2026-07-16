@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Cabinets4Less Sales</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html" class="logo-link">Cabinets4Less</a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="index.html#products" class="nav-link">Products</a></li>
+                <li><a href="index.html#gallery" class="nav-link">Gallery</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact contact-page">
+        <div class="contact-layout">
+            <!-- Left Side: Introduction and Form -->
+            <div class="contact-main">
+                <h2>Contact Us</h2>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input id="name" type="text" placeholder="Enter your name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input id="email" type="email" placeholder="Enter your email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message"
+                            placeholder="Tell us about the cabinets or products you are looking for..." rows="7"
+                            required></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-button">
+                        Send Message
+                    </button>
+                </form>
+            </div>
+
+            <!-- Right Side: Business Information -->
+            <aside class="contact-details">
+                <div class="contact-detail-block">
+                    <h3>Our Office</h3>
+                    <p>
+                        <p>Cabinets4Less<br></p>
+                        <a href="https://www.google.com/maps/search/?api=1&query=YOUR+FULL+BUSINESS+ADDRESS"
+                            target="_blank" rel="noopener noreferrer" class="map-link">
+                            
+                            2105 Sadau Ct Ste 142,<br>
+                            Denton, TX 76210
+                        </a>
+                    </p>
+                </div>
+
+                <div class="contact-detail-block">
+                    <h3>Visiting Hours</h3>
+                    <p>By Appointment</p>
+                </div>
+
+                <div class="contact-detail-block">
+                    <h3>Contact</h3>
+
+                    <!-- Replace these placeholders with real details -->
+                    <p>
+                        <a href="mailto:your@email.com">your@email.com</a><br>
+                        <a href="tel:+12145551234">(516) 605-8623</a>
+                    </p>
+                </div>
+            </aside>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2026 Cabinets4Less. All rights reserved.</p>
+            <p>Crafting Quality Cabinets for Your Home</p>
+        </div>
+    </footer>
+
+    <!-- Notification Toast -->
+    <div id="notification" class="notification-toast">
+        <div class="notification-content">
+            <span class="notification-checkmark">✓</span>
+            <span class="notification-message">Message Received!</span>
+            <button class="notification-close">&times;</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

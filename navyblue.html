@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Navy Blue Gallery</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Page-specific tweaks to emphasize navy blue */
+    .navy-hero {
+      background: linear-gradient(135deg,#031026 0%, #0b2340 60%);
+      color: var(--text-light);
+      padding: 100px 1rem;
+      text-align: center;
+    }
+    .navy-hero h1 { font-size: 2.6rem; margin-bottom: .6rem; text-align: center }
+    .navy-hero p { opacity: .9; margin-bottom: 1.4rem; }
+  </style>
+</head>
+<body class="navy-page">
+
+  <header class="navbar">
+    <div class="nav-container">
+      <div class="logo"><a class="logo-link" href="index.html">Cabinets4Less</a></div>
+      <nav>
+        <ul class="nav-menu">
+          <li><a class="nav-link" href="index.html">Home</a></li>
+          <li><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="navy-hero">
+    <div class="hero-content">
+      <h1>Navy Blue</h1>
+    </div>
+  </section>
+
+  <main class="gallery">
+    <h2>Designs in Navy Blue</h2>
+    <div class="gallery-grid" style="grid-template-columns:repeat(auto-fit,minmax(220px,1fr));">
+
+      <div class="gallery-item">
+        <div class="gallery-placeholder">
+          <img class="gallery-image" src="images/Navy Blue.png" alt="Navy Blue sample">
+        </div>
+        <a href="#">Navy Blue Sample (local)</a>
+      </div>
+
+      <div class="gallery-item">
+        <div class="gallery-placeholder">
+          <img class="gallery-image" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='800' height='500'><defs><linearGradient id='g' x1='0' x2='1' y1='0' y2='1'><stop offset='0%' stop-color='%23061b33'/><stop offset='100%' stop-color='%23033a66'/></linearGradient></defs><rect width='100%' height='100%' fill='url(%23g)'/><circle cx='120' cy='120' r='80' fill='%230b3b61' opacity='0.6'/><circle cx='680' cy='380' r='140' fill='%2302364f' opacity='0.35'/></svg>" alt="Navy gradient SVG">
+        </div>
+        <a href="#">Navy Gradient SVG</a>
+      </div>
+
+      <div class="gallery-item">
+        <div class="gallery-placeholder">
+          <img class="gallery-image" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='800' height='500'><rect width='100%' height='100%' fill='%23052a4a'/><g fill='%230a4b78' opacity='0.85'><rect x='0' y='80' width='800' height='40'/><rect x='0' y='160' width='800' height='40'/><rect x='0' y='240' width='800' height='40'/></g></svg>" alt="Navy stripes">
+        </div>
+        <a href="#">Navy Stripes SVG</a>
+      </div>
+
+      <div class="gallery-item">
+        <div class="gallery-placeholder">
+          <img class="gallery-image" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='800' height='500'><defs><linearGradient id='w' x1='0' x2='0' y1='0' y2='1'><stop offset='0' stop-color='%2301233a'/><stop offset='1' stop-color='%230b2f50'/></linearGradient></defs><rect width='100%' height='100%' fill='url(%23w)'/><path d='M0 300 Q200 220 400 300 T800 300 L800 500 L0 500 Z' fill='%23102944' opacity='0.6'/></svg>" alt="Navy waves">
+        </div>
+        <a href="#">Navy Waves SVG</a>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <p>&copy; 2026 Cabinets4Less. All rights reserved.</p>
+      <p>Crafting Quality Cabinets for Your Home</p>
+    </div>
+  </footer>
+
+</body>
+</html>

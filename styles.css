@@ -54,9 +54,17 @@ body {
 }
 
 .logo-link {
-    color: var(--accent-color);
+    display: flex;
+    align-items: center;
+    gap: 10px;
     text-decoration: none;
-    transition: all 0.3s ease;
+}
+
+.nav-logo-image {
+    width: 42px;
+    height: 42px;
+    object-fit: contain;
+    display: block;
 }
 
 .logo-link:hover {
@@ -798,4 +806,216 @@ body {
     .contact-form textarea {
         padding: 12px 14px;
     }
+}
+
+body {
+    background:
+        radial-gradient(circle at 15% 10%, rgba(212, 175, 55, 0.12), transparent 28%),
+        radial-gradient(circle at 85% 30%, rgba(255, 255, 255, 0.07), transparent 30%),
+        linear-gradient(135deg, #151a28 0%, #20283a 48%, #151a28 100%);
+    background-attachment: fixed;
+}
+
+.products,
+.gallery {
+    background: transparent;
+}
+
+.products-card,
+.gallery-item {
+    background: rgba(255, 255, 255, 0.10);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.22);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+}
+
+.gallery-item a,
+.gallery-item p {
+    background: rgba(255, 255, 255, 0.08);
+    color: var(--accent-color);
+}
+
+.products-card p {
+    color: rgba(255, 255, 255, 0.78);
+}
+
+.products-card h3 {
+    color: var(--accent-color);
+}
+
+.navbar {
+    background: rgba(26, 31, 46, 0.72);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+}
+
+.products-card:hover,
+.gallery-item:hover {
+    background: rgba(255, 255, 255, 0.16);
+    border-color: rgba(212, 175, 55, 0.55);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.32);
+}
+
+/* Consistent dark/glass styling across all pages */
+
+/* Main section backgrounds */
+.products,
+.gallery,
+.product-detail,
+.cabinet-page {
+    background: transparent;
+}
+
+/* Main headings: change black to light */
+.products h2,
+.gallery h2,
+.product-detail h1,
+.product-detail h2,
+.cabinet-page h1,
+.cabinet-page h2 {
+    color: var(--text-light);
+}
+
+/* Supporting text */
+.products > p,
+.gallery > p,
+.product-detail p,
+.cabinet-page p {
+    color: rgba(224, 224, 224, 0.82);
+}
+
+/* Product cards */
+.products-card,
+.gallery-item {
+    background: rgba(255, 255, 255, 0.10);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.22);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+}
+
+/* Product-card descriptions: remove the old gray text */
+.products-card p {
+    color: rgba(224, 224, 224, 0.80);
+}
+
+/* Gallery captions */
+.gallery-item a,
+.gallery-item p {
+    background: rgba(255, 255, 255, 0.08);
+    color: var(--accent-color);
+}
+
+/* Hover */
+.products-card:hover,
+.gallery-item:hover {
+    background: rgba(255, 255, 255, 0.16);
+    border-color: rgba(212, 175, 55, 0.55);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.32);
+}
+
+:root {
+    --primary-color: #526b5b;
+    --secondary-color: #7f9b84;
+    --text-dark: #26352b;
+    --text-light: #ffffff;
+    --bg-light: #f5f1e8;
+}
+
+body,
+.contact {
+    background:
+        radial-gradient(circle at 15% 15%, rgba(212, 175, 55, 0.15), transparent 30%),
+        radial-gradient(circle at 85% 80%, rgba(127, 155, 132, 0.18), transparent 35%),
+        linear-gradient(135deg, #e9e4d8 0%, #f8f6ef 48%, #e4eee5 100%);
+}
+
+/* Keep the dark header/footer for contrast */
+.navbar,
+.footer {
+    background: rgba(38, 53, 43, 0.96);
+}
+
+/* Make cards light glass, not teal */
+.products-card,
+.gallery-item {
+    background: rgba(255, 255, 255, 0.62);
+    border: 1px solid rgba(82, 107, 91, 0.20);
+    box-shadow: 0 10px 28px rgba(38, 53, 43, 0.12);
+    backdrop-filter: blur(12px);
+}
+
+.products-card p {
+    color: rgba(38, 53, 43, 0.78);
+}
+
+/* Unify the hero with the warm cream + sage theme */
+.hero {
+    background:
+        radial-gradient(circle at 20% 20%, rgba(212, 175, 55, 0.20), transparent 30%),
+        linear-gradient(135deg, #e9e4d8 0%, #f8f6ef 52%, #e4eee5 100%);
+}
+
+/* Make hero text readable on cream */
+.hero h1 {
+    color: #26352b;
+}
+
+.hero p {
+    color: rgba(38, 53, 43, 0.78);
+}
+
+/* Fix section titles that are washed out */
+.products h2,
+.gallery h2 {
+    color: #26352b;
+}
+
+/* Make navbar feel lighter and less gold-heavy */
+.navbar {
+    background: rgba(38, 53, 43, 0.94);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.16);
+}
+
+.nav-link.active {
+    color: #f1e3b2;
+}
+
+/* Contact page: fix text contrast on the light background */
+.contact {
+    background:
+        radial-gradient(circle at 15% 15%, rgba(212, 175, 55, 0.14), transparent 30%),
+        radial-gradient(circle at 85% 80%, rgba(127, 155, 132, 0.20), transparent 35%),
+        linear-gradient(135deg, #e9e4d8 0%, #f8f6ef 52%, #e4eee5 100%);
+    color: #26352b;
+}
+
+.contact-page .contact-main h2,
+.contact-page .contact-form label,
+.contact-page .contact-detail-block h3 {
+    color: #26352b;
+}
+
+.contact-page .contact-intro,
+.contact-page .contact-detail-block p {
+    color: rgba(38, 53, 43, 0.78);
+}
+
+/* Form fields */
+.contact-page .contact-form input,
+.contact-page .contact-form textarea {
+    background: rgba(255, 255, 255, 0.70);
+    color: #26352b;
+    border-color: rgba(82, 107, 91, 0.30);
+}
+
+.contact-page .contact-form input::placeholder,
+.contact-page .contact-form textarea::placeholder {
+    color: rgba(38, 53, 43, 0.48);
+}
+
+.contact-page .contact-detail-block a {
+    color: #a88212;
 }
